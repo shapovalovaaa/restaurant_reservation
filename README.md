@@ -15,10 +15,13 @@
 ### 2.2 Интерфейс пользователя
 Главная страница:
 ![Main Page](https://github.com/shapovalovaaa/restaurant_reservation/blob/main/Mockups/Main.png)
+___
 Страница регистрации:
 ![Registration Page](https://github.com/shapovalovaaa/restaurant_reservation/blob/main/Mockups/Registration.png)
+___
 Страница авторизации:
 ![Autorization Page](https://github.com/shapovalovaaa/restaurant_reservation/blob/main/Mockups/Autorization.png)
+___
 Страница редактирования столика (доступна только администратору):
 ![Admin Page Example](https://github.com/shapovalovaaa/restaurant_reservation/blob/main/Mockups/Admin.png)
 ### 2.3 Характеристики пользователей
