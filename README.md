@@ -14,13 +14,13 @@
 Интерфейс системы бронирования должен быть простым и интуитивно понятным для пользователей.
 ### 2.2 Интерфейс пользователя
 Главная страница:
-
+![Main Page](https://github.com/shapovalovaaa/restaurant_reservation/blob/main/Mockups/Main.png)
 Страница регистрации:
-
+![Registration Page](https://github.com/shapovalovaaa/restaurant_reservation/blob/main/Mockups/Registration.png)
 Страница авторизации:
-
+![Autorization Page](https://github.com/shapovalovaaa/restaurant_reservation/blob/main/Mockups/Autorization.png)
 Страница редактирования столика (доступна только администратору):
-
+![Admin Page Example](https://github.com/shapovalovaaa/restaurant_reservation/blob/main/Mockups/Admin.png)
 ### 2.3 Характеристики пользователей
 Целевая аудитория данного приложения - люди с начальными навыками работы с компьтером: умение пользоваться браузером, навигация по сайту, регистрация или авторизация с помощью социальных сетей. Данное приложение разработано для людей, которые хотят забронировать cтолик без особых усилий.
 ## 3 Системные требования
