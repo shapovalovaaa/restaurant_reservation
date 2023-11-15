@@ -20,6 +20,7 @@ describe('Reservation Route', () => {
         //console.log('Disconnected from MongoDB');
     });
 
+    // возможность просмотра списка броней   
     it('should return 200 OK for /api/reservation and get all reservation', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');
@@ -34,6 +35,7 @@ describe('Reservation Route', () => {
         }
     });
 
+    // возможность просмотра информации о брони 
     it('should return 200 OK for /api/reservation/find/:id and return reservation from user nastya', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');
@@ -47,6 +49,7 @@ describe('Reservation Route', () => {
         }
     });
 
+    // возможность добавления новой брони 
     it('should return 200 OK for /api/reservation', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');

@@ -20,6 +20,7 @@ describe('Users Route', () => {
         //console.log('Disconnected from MongoDB');
     });
 
+    // возможность просмотра списка пользователей  
     it('should return 200 OK for /api/users and get all users', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');
@@ -34,6 +35,7 @@ describe('Users Route', () => {
         }
     });
 
+    // возможность просмотра информации о пользователе
     it('should return 200 OK for /api/users/:id and return user "nastya"', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');

@@ -20,6 +20,7 @@ describe('Tables Route', () => {
         //console.log('Disconnected from MongoDB');
     });
 
+    // возможность просмотра списка столиков
     it('should return 200 OK for /api/tables and get all tables', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');
@@ -34,6 +35,7 @@ describe('Tables Route', () => {
         }
     });
 
+    // возможность просмотра информации о столике
     it('should return 200 OK for /api/tables/find/:id and return "Double Table"', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');
@@ -47,6 +49,7 @@ describe('Tables Route', () => {
         }
     });
 
+    // возможность добавления нового столика 
     it('should return 200 OK for /api/tables/:restaurantId', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');

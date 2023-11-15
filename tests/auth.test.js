@@ -21,6 +21,7 @@ describe('Auth Route', () => {
         //console.log('Disconnected from MongoDB');
     });
 
+    // возможность добавления нового пользователя 
     it('should return 200 OK for /api/auth/register', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');
@@ -47,6 +48,7 @@ describe('Auth Route', () => {
         }
     });
 
+    // возможность входа в приложение зарегистрированного ранее пользователя
     it('should return 200 OK for /api/auth/login', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');

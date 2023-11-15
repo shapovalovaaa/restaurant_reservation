@@ -20,6 +20,7 @@ describe('Restaurants Route', () => {
         //console.log('Disconnected from MongoDB');
     });
 
+    // возможность просмотра списка заведений
     it('should return 200 OK for /api/restaurants and get all restaurants', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');
@@ -34,6 +35,7 @@ describe('Restaurants Route', () => {
         }
     });
 
+    // возможность просмотра информации о заведении 
     it('should return 200 OK for /api/restaurants/find/:id and return cafe "Barashka"', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');
@@ -47,6 +49,7 @@ describe('Restaurants Route', () => {
         }
     });
 
+    // возможность добавления нового заведения 
     it('should return 200 OK for /api/restaurants', async function () {
         this.timeout(5000);
         const module = await import('../api/index.js');
