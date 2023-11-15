@@ -1,0 +1,169 @@
+.restaurantContainer {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.restaurantWrapper {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.bookNow {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border: none;
+    padding: 10px 20px;
+    background-color: #592720;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restaurantTitle {
+    font-size: 35px;
+    color: #3d0c02;
+}
+
+.restaurantAddress {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.restaurantDistance {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #703642;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.restPriceHighlight {
+    color: #cb6d51;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.restaurantImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.restaurantImgWrapper {
+    width: 33%;
+}
+
+.restaurantImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.restaurantDetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.restaurantDetailsTexts {
+    flex: 3;
+    color: #913519;
+    background-color: #fff0eb;
+}
+
+.restaurantDesc {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.restaurantDetailsPrice {
+    flex: 1;
+    background-color: #fff0eb;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #703642;
+    font-size: 22px;
+}
+
+.restaurantDetailsprice>h1 {
+    font-size: 18px;
+    color: #555;
+}
+
+.restaurantDetailsPrice>span {
+    font-size: 14px;
+}
+
+.restaurantDetailsPrice>h2 {
+    font-weight: 300;
+}
+
+.restaurantDetailsPrice>button {
+    border: none; 
+    padding: 10px 20px;
+    background-color: #592720;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.slider {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 65vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.426);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.sliderWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderImg {
+    width: 80%;
+    height: 80vh;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.arrow {
+    margin: 20px;
+    font-size: 50px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+
+.restaurantDetailsPrice>span{
+    font-size: 20px;
+}

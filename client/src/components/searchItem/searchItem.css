@@ -1,0 +1,115 @@
+.searchItem {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid blanchedalmond;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    background-color: bisque;
+}
+
+.siImg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.siDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+}
+
+.siTitle {
+    font-size: 25px;
+    color: #4A0404;
+}
+
+.siDistance {
+    font-size: 18px;
+}
+
+.siTerrace {
+    font-size: 16px;
+    background-color: #BC8F8F;
+    color: white;
+    width: max-content;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+.siCuisine {
+    font-size: 17px;
+    font-weight: bold;
+    color: #922724;
+}
+
+.siFeatures {
+    font-size: 16px;
+}
+
+.siCancelOp {
+    font-size: 18px;
+    color: #d2691e;
+    font-weight: bold;
+}
+
+.siCancelOpSubtitle {
+    font-size: 16px;
+}
+
+.siDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.siRating {
+    display: flex;
+    justify-content:space-around;
+}
+
+.siRating>span {
+    font-weight: 500;
+    font-size: 18px;
+    color: #592720;
+}
+
+.siRating>button {
+    background-color: #a43838bc;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.siDetailsTexts {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.siPrice {
+    font-size: 24px;
+}
+
+.siTerraceOp {
+    font-size: 16px;
+    color: black;
+}
+
+.siCheckButton {
+    background-color: #622A0F;
+    color: white;
+    font-weight: bold;
+    padding: 10px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
