@@ -59,6 +59,15 @@ export const getRestCity = async (req, res, next) => {
     };
 };
 
+export const getRestType = async (req, res, next) => {
+    try {
+        const restaurants = await Restaurant.find({ type: req.query.type });
+        res.status(200).json(restaurants);
+    } catch (err) {
+        next(err);
+    };
+};
+
 export const getRestaurants = async (req, res, next) => {
     try {
         const restaurants = await Restaurant.find().limit(req.query.limit);

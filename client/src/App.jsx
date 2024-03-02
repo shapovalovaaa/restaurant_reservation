@@ -8,6 +8,7 @@ import List from "./pages/list/List";
 import Restaurant from "./pages/restaurant/Restaurant";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
+import ListType from "./pages/list/ListType";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/restaurants" element={<List />} />
+        <Route path="/restaurants/type" element={<ListType />} />
         <Route path="/restaurants/:id" element={<Restaurant />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register/>} />

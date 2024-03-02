@@ -11,34 +11,12 @@ const Featured = () => {
     const navigate = useNavigate()
     const { dispatch } = useContext(SearchContext);
 
-    const handleSearchMinsk = () => {
-        dispatch({ type: "NEW_SEARCH", payload: { destination:"Minsk", dates:[
+    const handleSearch = (destination) => {
+        dispatch({ type: "NEW_SEARCH", payload: { destination, dates:[
             new Date(),
             new Date()]
         , options: 2 } });
-        navigate("/restaurants", { state: { destination: "Minsk", dates:{
-            startDate: new Date(),
-            endDate: new Date()
-        }, options: 2 } });
-    }
-    const handleSearchGomel = () => {
-        dispatch({ type: "NEW_SEARCH", payload: { destination:"Gomel", dates:[
-            new Date(),
-            new Date()]
-        , options: 2 } });
-        navigate("/restaurants", { state: { destination: "Gomel", dates:{
-            startDate: new Date(),
-            endDate: new Date()
-        }, options: 2
-        }
-        });
-    }
-    const handleSearchGrodno = () => {
-        dispatch({ type: "NEW_SEARCH", payload: { destination:"Grodno", dates:[
-            new Date(),
-            new Date()]
-        , options: 2 } });
-        navigate("/restaurants", { state: { destination: "Grodno", dates:{
+        navigate("/restaurants", { state: { destination, dates:{
             startDate: new Date(),
             endDate: new Date()
         }, options: 2 } });
@@ -50,7 +28,7 @@ const Featured = () => {
                 <><div className="featuredItem">
                     <img src="img\minsk.avif" alt="" className="featuredImg minsk" />
                     <div className="featuredTitles">
-                        <h1 onClick={handleSearchMinsk}>Minsk</h1>
+                        <h1 onClick={() => handleSearch("Minsk")}>Minsk</h1>
                         <h2>{data[0]} properties</h2>
                         
                     </div>
@@ -58,14 +36,14 @@ const Featured = () => {
                     <div className="featuredItem">
                         <img src="img\gomel.avif" alt="" className="featuredImg gomel" />
                         <div className="featuredTitles">
-                            <h1 onClick={handleSearchGomel}>Gomel</h1>
+                            <h1 onClick={() => handleSearch("Gomel")}>Gomel</h1>
                             <h2>{data[1]} properties</h2>
                         </div>
                     </div>
                     <div className="featuredItem">
                         <img src="img\grodno.avif" alt="" className="featuredImg grodno" />
                         <div className="featuredTitles">
-                            <h1 onClick={handleSearchGrodno}>Grodno</h1>
+                            <h1 onClick={() => handleSearch("Grodno")}>Grodno</h1>
                             <h2>{data[2]} properties</h2>
                         </div>
                     </div></>

@@ -7,6 +7,7 @@ import Navbar from "../../components/navbar/Navbar.jsx"
 import PropertyList from "../../components/propertyList/PropertyList.jsx"
 
 import "./home.css"
+import { SearchTypeProvider } from "../../context/searchType.jsx"
 
 const Home = () => {
     return (
@@ -16,7 +17,10 @@ const Home = () => {
             <div className="homeContainer">
                 <Featured />
                 <h1 className="homeTitle">Browse by property type</h1>
-                <PropertyList />
+                <SearchTypeProvider>
+                    <PropertyList />
+                </SearchTypeProvider>
+                
                 <h1 className="homeTitle">Restaurants guests love</h1>
                 <FeaturedProperties />
                 <MailList />

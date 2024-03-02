@@ -18,8 +18,8 @@ const List = () => {
   const [min, setMin] = useState(undefined);
   const [max, setMax] = useState(undefined);
 
+  
   const { data, loading, error, reFetch } = useFetch(`http://localhost:8800/api/restaurants/get?city=${destination}`);
-
   const handleClick = () => {
     reFetch();
   };

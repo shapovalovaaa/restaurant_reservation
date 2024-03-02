@@ -7,20 +7,21 @@ import {verifyAdmin} from "../utils/verifyToken.js"
 const router = express.Router();
 
 //create
-router.post("/",
-//    verifyAdmin,
+router.post("/", // verifyAdmin, 
     createRestaurant);
 
 //update
 router.put("/:id", verifyAdmin, updateRestaurant);
 //delete
-router.delete("/:id", verifyAdmin, deleteRestaurant);
+router.delete("/:id", // verifyAdmin, 
+    deleteRestaurant);
 //get
 router.get("/find/:id", getRestaurant);
 //get all
 router.get("/", getRestaurants);
 
 router.get("/get", getRestCity);
+router.get("/getAllOfTheType", getRestType);
 router.get("/countByCity", countByCity);
 router.get("/countByType", countByType);
 router.get("/table/:id", getRestaurantTables);
